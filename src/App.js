@@ -30,15 +30,46 @@ class App extends Component {
               "color": "#232c64",
               "font-weight": "500",
               "font-size": "28px"
-
-          }}>Cookie Banking System</h1>
+            }}>Cookie Banking System
+          </h1>
         </header>
         <div style={{
           "background-image": `url(${vault})`,
           "background-size": "cover",
           "background-position": "center",
-          "flex": "1 0 auto"
-        }}/>
+          "flex": "1 0 auto",
+          "flex-direction": "column",
+          "justify-content": "center",
+          "align-items": "center",
+          "display": "flex"
+        }}>
+          <input type="text" name="FirstName" placeholder="First name"
+            style={{
+              "padding": "10px",
+              "font-size": "26px",
+              "width": "350px",
+              "margin": "10px"
+            }}/>
+          <input type="text" name="FirstName" placeholder="Last name"
+            style={{
+              "padding": "10px",
+              "font-size": "26px",
+              "width": "350px",
+              "margin": "10px"
+            }}/>
+          <div
+            style={{
+              "padding": "14px",
+              "width": "350px",
+              "margin": "10px",
+              "background-color": "#005ea6",
+              "color": "white",
+              "font-size": "22px",
+              "border-radius": "15px"
+            }}>
+              Continue
+            </div>
+        </div>
       </div>
     );
   }
