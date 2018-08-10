@@ -16,12 +16,12 @@ class App extends Component {
           "padding": "10px",
           "display": "flex",
           "flex-direction": "row",
-          "flex": "0 0 150px"
+          "flex": "0 0 120px"
         }}>
           <img src={logo} alt="logo" 
             style={{
               "align-self":"flex-start",
-              "height": "150px"
+              "height": "120px"
           }}/>
           <h1
             style={{
@@ -65,7 +65,8 @@ class App extends Component {
               "background-color": "#005ea6",
               "color": "white",
               "font-size": "22px",
-              "border-radius": "15px"
+              "border-radius": "15px",
+              "cursor":"pointer"
             }}>
               Continue
             </div>
