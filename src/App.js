@@ -7,23 +7,37 @@ class App extends Component {
   render() {
     return (
       <div className="App" style={{
-        "text-align": "left"
+        "display": "flex",
+        "flex-direction": "column",
+        "height": "100vh"
       }}>
         <header style={{
           "background-color": "white",
-          "height": "150px",
-          "padding": "20px"
+          "padding": "10px",
+          "display": "flex",
+          "flex-direction": "row",
+          "flex": "0 0 150px"
         }}>
           <img src={logo} alt="logo" 
             style={{
-               "height": "150px"
+              "align-self":"flex-start",
+              "height": "150px"
           }}/>
+          <h1
+            style={{
+              "align-self": "center",
+              "margin-left": "40px",
+              "color": "#232c64",
+              "font-weight": "500",
+              "font-size": "28px"
+
+          }}>Cookie Banking System</h1>
         </header>
         <div style={{
-          "height": "450px",
           "background-image": `url(${vault})`,
           "background-size": "cover",
-          "background-position": "center"
+          "background-position": "center",
+          "flex": "1 0 auto"
         }}/>
       </div>
     );
