@@ -4,56 +4,61 @@ import vault from './img/vaulthires.jpg';
 import './App.css';
 
 class App extends Component {
+
+  onNameContinue(event) {
+    console.log(event);
+  }
+
   render() {
     return (
       <div className="App" style={{
         "display": "flex",
-        "flex-direction": "column",
+        "flexDirection": "column",
         "height": "100vh"
       }}>
         <header style={{
-          "background-color": "white",
+          "backgroundColor": "white",
           "padding": "10px",
           "display": "flex",
-          "flex-direction": "row",
+          "flexDirection": "row",
           "flex": "0 0 120px"
         }}>
           <img src={logo} alt="logo" 
             style={{
-              "align-self":"flex-start",
+              "alignSelf":"flex-start",
               "height": "120px"
           }}/>
           <h1
             style={{
-              "align-self": "center",
-              "margin-left": "40px",
+              "alignSelf": "center",
+              "marginLeft": "40px",
               "color": "#232c64",
-              "font-weight": "500",
-              "font-size": "28px"
+              "fontWeight": "500",
+              "fontSize": "28px"
             }}>Cookie Banking System
           </h1>
         </header>
         <div style={{
-          "background-image": `url(${vault})`,
-          "background-size": "cover",
-          "background-position": "center",
+          "backgroundImage": `url(${vault})`,
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
           "flex": "1 0 auto",
-          "flex-direction": "column",
-          "justify-content": "center",
-          "align-items": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
           "display": "flex"
         }}>
-          <input type="text" name="FirstName" placeholder="First name"
+          <input type="text" name="firstName" placeholder="First name"
             style={{
               "padding": "10px",
-              "font-size": "26px",
+              "fontSize": "26px",
               "width": "350px",
               "margin": "10px"
             }}/>
-          <input type="text" name="FirstName" placeholder="Last name"
+          <input type="text" name="lastName" placeholder="Last name"
             style={{
               "padding": "10px",
-              "font-size": "26px",
+              "fontSize": "26px",
               "width": "350px",
               "margin": "10px"
             }}/>
@@ -62,12 +67,13 @@ class App extends Component {
               "padding": "14px",
               "width": "350px",
               "margin": "10px",
-              "background-color": "#005ea6",
+              "backgroundColor": "#005ea6",
               "color": "white",
-              "font-size": "22px",
-              "border-radius": "15px",
+              "fontSize": "22px",
+              "borderRadius": "15px",
               "cursor":"pointer"
-            }}>
+            }}
+            onClick = {this.onNameContinue}>
               Continue
             </div>
         </div>
